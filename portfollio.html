@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>shop</title>
+  <title>ConnectIQ</title>
   <!-- resetten van browsers -->
   <link rel="stylesheet" href="css/reset.css">
   <!-- Bootstrap CSS -->
@@ -17,174 +17,158 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
     </script>
   <!-- eigen geschreven css voor jouw html-bestand -->
-   <script defer src="map.js/script.js"></script>
-  <link rel="stylesheet" href="map css/style.css">
+   <script defer src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
-<main>
+
 <body class="p-3 m-0 border-0 bd-example">
   <div class="spinner-wrapper">
     <div class="spinner-border text-warning" role="status">
       <span class="visually-hidden">Loading...</span>
+    </div>
   </div>
-  </div>
-    <nav class="navbar navbar-expand-lg geel container-fluid">
-    <div class="container">
-        
+
+  <main>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background:hsl(139, 11%, 49%); border-radius:30px; margin:20px auto;">
+      <div class="container-fluid">
+        <!-- Brand -->
         <div class="d-flex align-items-center">
-            <a class="navbar-brand pe-3" href="index.html">
-                <img src="map assets/images/Logo.png" alt="ConnectIQ" width="80" height="80" class="rounded-circle">
-            </a>
-            <span class="fw-bold">ConnectIQ <br> 
-                <span class="fw-light">Network Management</span>
-            </span>
+          <a class="navbar-brand pe-3" href="index.html">
+            <img src="assets/images/Logo.png" alt="ConnectIQ" width="80" height="80" class="rounded-circle">
+          </a>
+          <span class="fw-bold text-white">
+            ConnectIQ<br>
+            <span class="fw-light">Network Management</span>
+          </span>
         </div>
 
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <!-- Mobile toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
 
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="portfollio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-        </div>
-    </div>
-</nav>
-  <div>
-    <div class="row pt-3">
-  <div class="col-4">
-    <div id="list-example" class="list-group sticky-top" style="top: 20px;">
-      <a class="list-group-item list-group-item-action" href="#list-item-1">How it all started...</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-2">Where we at today...</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-3">A bit technical...</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-4">About me</a>
-    </div>
-  </div>
-  <div class="col-8">
-    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-      <h4 id="list-item-1">How it all started...</h4>
-      <p>Once upon a time well, in the late 1960s computers were giant machines that couldn’t talk to each other. Then a group of clever researchers working for the U.S. Department of Defense created ARPANET, a project that let a few computers share data through phone lines. It was basically the Internet’s great-great-grandparent. <br> <br>
-
-      Fast-forward to the 1980s: scientists connected more networks together and called it “the network of networks.” Then in 1989, a British guy named Tim Berners-Lee invented the World Wide Web, giving us websites, hyperlinks, and the ability to waste hours watching cat videos. <br> <br>
-
-      So from four clunky computers to billions of devices the Internet grew into the digital playground we all live in today.</p>
-      <div  class="row">
-
-        <div class="col-md-6 mb-4">
-          <div class="card h-100 d-flex flex-column">
-                <img src="map assets/images/tim berners lee.jpg" height="250px" class="card-img-top" alt="tim berners lee">
-                <div class="card-body">
-                  <h5 class="card-title">Tim Berners-Lee</h5>
-                  <p class="card-text tex">invented the World Wide Web in 1989.</p>
+        <!-- Navigation items -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center gap-3 ms-0">
+            <!-- Search form -->
+            <li class="nav-item">
+              <form class="search-form d-flex">
+                <input type="text" placeholder="Type to search" class="search-input form-control me-2">
+                <div class="search-button">
+                  <i class="fa-solid fa-magnifying-glass search-icon"></i> 
+                  <i class="fa-solid fa-xmark search-close"></i>
                 </div>
-              </div>
-        </div>
-                
+              </form>
+            </li>
 
-              <div class="col-md-6 mb-4">
-          <div class="card h-100 d-flex flex-column" >
-                <img src="map assets/images/arbanet try1.jpg" height="250px" class="card-img-top" alt="Arbanet logo">
-                <div class="card-body">
-                  <h5 class="card-title">ARPANET</h5>
-                  <p class="card-text tex">ARPANET was the Internet’s ancestor, first message: “LO” before crashing!</p>
-                </div>
-              </div>
-        </div>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
 
+            <li class="nav-item">
+              <a class="nav-link text-white" href="portfollio.html">Portfolio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="btn" href="contact.html" style="background:#d5e7d9; border-radius:15px; padding:5px 20px; color:#000;">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      
-      
-      <h4 id="list-item-2">Where we at today...</h4>
-      <p>Today, we live in a hyper-connected world, shaped by inventions born from the internet.
+    </nav>
 
-          Our daily lives are now built on cloud computing, AI assistants, and instant mobile communication. We work remotely, are entertained by on-demand streaming, and socialize through global platforms. <br> <br>
+    <!-- Portfolio Section -->
+    <div class="container">
+      <h1 class="text-center p-3 p-md-5">Explore my projects...</h1>
 
-          Emerging right now are technologies taking this further: the metaverse for immersive experiences, Web3 and decentralized finance, and a future being built by AI—all direct results of the internet's foundational power. <br> <br>
-
-          The AI Revolution:
-          modern Artificial Intelligence, particularly the generative AI and advanced machine learning we see today, is entirely dependent on the internet. <br> <br>
-
-          Streaming & On-Demand: The internet broke the tyranny of schedules, revolutionizing entertainment (Spotify, Netflix), education (YouTube, Coursera), and work (Zoom, Slack). 
-        </p>
-          <div  class="row">
-
-        <div class="col-md-6 mb-4">
-          <div class="card h-100 d-flex flex-column">
-                <img src="map assets/images/Ai revolution.jpg" height="250px" class="card-img-top" alt="tim berners lee">
-                <div class="card-body">
-                  <h5 class="card-title">AI REVOLUTION</h5>
-                  <p class="card-text tex">goal was to explore if machines could simulate human learning and intelligence</p>
-                </div>
-              </div>
-        </div>
-                
-
-              <div class="col-md-6 mb-4">
-          <div class="card h-100 d-flex flex-column" >
-                <img src="map assets/images/streaming on demand.jpg" height="250px" class="card-img-top" alt="Arbanet logo">
-                <div class="card-body">
-                  <h5 class="card-title">Streaming & On-Demand</h5>
-                  <p class="card-text tex">Fun fact: Netflix loses $40 million yearly to "Are you watching?"</p>
-                </div>
-              </div>
+      <div class="row justify-content-center">
+        <!-- Project 1 -->
+        <div class="col-12 col-sm-6 col-lg-4 p-3 p-md-5">
+          <div class="card h-100 p-3">
+            <img src="assets/images/Cybersecurity.webp" class="card-img-top custom-radius" alt="Portfolio1" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Cybersecurity</h5>
+              <p class="card-text">A project where i learned how Cybersecurity works in the world of internet.</p>
+              <a href="project1.html" class="btn btn-primary mt-auto" style="background:hsl(139, 11%, 49%); color:white; border:none;">See project</a>
+            </div>
+          </div>
         </div>
 
+        <!-- Project 2 -->
+        <div class="col-12 col-sm-6 col-lg-4 p-3 p-md-5">
+          <div class="card h-100 p-3">
+            <img src="assets/images/cisco.jpeg" class="card-img-top custom-radius" alt="Portfolio2" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">WebWiz</h5>
+              <p class="card-text">A project about making a network from scratch and where details matters!!</p>
+              <a href="project2.html" class="btn btn-primary mt-auto" style="background:hsl(139, 11%, 49%); color:white; border:none;">See project</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-12 col-sm-6 col-lg-4 p-3 p-md-5">
+          <div class="card h-100 p-3">
+            <img src="assets/images/8.webp" class="card-img-top custom-radius" alt="Project3" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Lorem ipsum</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, dolores!</p>
+              <a href="#" class="btn btn-primary mt-auto" style="background:hsl(139, 11%, 49%); color:white; border:none;">See project</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-12 col-sm-6 col-lg-4 p-3 p-md-5">
+          <div class="card h-100 p-3">
+            <img src="assets/images/8.webp" class="card-img-top custom-radius" alt="Project4" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Lorem ipsum</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, facere?</p>
+              <a href="#" class="btn btn-primary mt-auto" style="background:hsl(139, 11%, 49%); color:white; border:none;">See project</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="col-12 col-sm-6 col-lg-4 p-3 p-md-5">
+          <div class="card h-100 p-3">
+            <img src="assets/images/8.webp" class="card-img-top custom-radius" alt="Project5" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Lorem ipsum</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, vel!</p>
+              <a href="#" class="btn btn-primary mt-auto" style="background:hsl(139, 11%, 49%); color:white; border:none;">See project</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="col-12 col-sm-6 col-lg-4 p-3 p-md-5">
+          <div class="card h-100 p-3">
+            <img src="assets/images/8.webp" class="card-img-top custom-radius" alt="Project6" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Lorem ipsum</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, fuga.</p>
+              <a href="#" class="btn btn-primary mt-auto" style="background:hsl(139, 11%, 49%); color:white; border:none;">See project</a>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <h4 id="list-item-3">A bit technical...</h4>
-      <p>We often picture the internet as a mystical, invisible force—a silent, wireless whisper that connects us all. We call it "the cloud," a name that perfectly captures this sense of something intangible and everywhere. But this is a beautiful illusion. <br> <br>
-
-      The truth is, the internet is profoundly, ruggedly physical. It is quite literally a global nervous system made of cables. When you send an email across an ocean or stream a movie from another continent, your data doesn't magically float through the air. It embarks on an epic, lightspeed journey along a pathway of glass fibers no thicker than a human hair, bundled into cables that lie on the most hostile and remote landscape on Earth: the deep ocean floor. <br> <br>
-
-      These submarine cables are the unsung heroes of our connected age. They are engineering marvels, armored in steel and buried in trenches where they cross shallow shores, then laid delicately across the abyssal plains miles beneath the surface. Sharks occasionally nibble on them, and ships' anchors can snag them, but for the most part, they sit in the eternal dark, silently pulsing with light, carrying over 99% of all international data. <br> <br>
-
-      So, the next time you video-call a friend on the other side of the world or watch a live event from a distant country, remember the incredible voyage your data is taking. That instant connection travels through a hidden, underwater world of cables—the solid, tangible foundation that makes the magic of the cloud possible. The internet isn't in the air; it's anchored to the Earth itself.
-
-      </p>
-      <div  class="row">
-
-        <div class="col-md-6 mb-4">
-          <div class="card h-100 d-flex flex-column">
-                <img src="map assets/images/internet cables in the ocean.avif" height="250px" class="card-img-top" alt="tim berners lee">
-                <div class="card-body">
-                  <h5 class="card-title">Internet cables</h5>
-                  <p class="card-text tex">A map where it show how internet cables expand around the world.</p>
-                </div>
-              </div>
-        </div>
-                
-
-              <div class="col-md-6 mb-4">
-          <div class="card h-100 d-flex flex-column" >
-                <img src="map assets/images/optical-fiber-cable.jpg" height="250px" class="card-img-top" alt="Arbanet logo">
-                <div class="card-body">
-                  <h5 class="card-title">Fiber cables</h5>
-                  <p class="card-text tex">This is how data gets carried in lightspeed around the world.</p>
-                </div>
-              </div>
-        </div>
-
-      </div>
-      <h4 id="list-item-4">About me</h4>
-      <p>I'm Amro, a student of System and Network Administration based in Belgium. It was a pleasure to have you explore my corner of the web. If any of the content resonated with you or sparked your curiosity, I invite you to share your thoughts via the <a href="contact.html">contact</a> page. Your feedback is most welcome.</p>
     </div>
-  </div>
-</div></div>
   </main>
-<footer class="footer">Made by Amro</footer>
+
+  <footer class="footer text-center py-3">&copy; ConnectIQ <span id="year"></span></footer>
 
 </body>
 </html>
