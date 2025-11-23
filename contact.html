@@ -100,6 +100,7 @@
                 <div class="col-sm-6">
                   <label for="firstName" class="form-label">First name <font color="red">*</font></label>
                   <input
+                    name="firstName"
                     type="text"
                     class="form-control"
                     id="firstName"
@@ -136,6 +137,7 @@
                     <span class="text-body-secondary"><font color="red">*</font></span></label
                   >
                   <input
+                    name="email"
                     type="email"
                     class="form-control"
                     id="email"
@@ -150,7 +152,7 @@
                 
                 <div class="col-sm-12 pt-3">
                   <label for="country" class="form-label">Country <font color="red">*</font></label>
-                  <select class="form-select" id="country" required>
+                  <select class="form-select" id="country" name="role[]" required>
                     <option value="">Choose...</option>
                     <option>Belgium</option>
                     <option>Canada</option>
@@ -176,7 +178,7 @@
                 </div>
                 <div class="col-sm-12 pt-3">
                   <label for="state" class="form-label">State <font color="red">*</font></label>
-                  <select class="form-select" id="state" required>
+                  <select class="form-select" id="state" name="role[]" required>
                     <option value="">Choose...</option>
                     <option>Belgium</option>
                     <option>Alabama</option>
@@ -213,6 +215,7 @@
                 <div class="col-sm-12 pt-3">
                   <label for="zip" class="form-label">Zip <font color="red">*</font></label>
                   <input
+                    name="zip"
                     type="text"
                     class="form-control"
                     id="zip"
@@ -223,7 +226,7 @@
                 </div>
               </div>
               <div class="mb-3 pt-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Comments:</label>
+                <label for="exampleFormControlTextarea1" class="form-label" name="name">Comments:</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
               <hr class="my-4" />
