@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ConnectIQ</title>
+  <title>ConnectIQ - Cybersecurity</title>
   <!-- resetten van browsers -->
   <link rel="stylesheet" href="css/reset.css">
   <!-- Bootstrap CSS -->
@@ -27,226 +27,278 @@
       referrerpolicy="no-referrer"
     />
     <style>
-.header-bg {
-    background-image: url('assets/images/cybertry.jpg');
-    background-size: cover;
-    border-radius: 25px;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-    text-align: center;
-    padding: 150px 20px;
-}
-</style>
+      .header-bg {
+          background-image: url('assets/images/cybertry.jpg');
+          background-size: cover;
+          border-radius: 25px;
+          background-position: center;
+          background-repeat: no-repeat;
+          color: white;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+          text-align: center;
+          padding: 150px 20px;
+          margin: 20px 0;
+      }
+
+    </style>
 </head>
-<main>
+
 <body class="p-3 m-0 border-0 bd-example">
   <div class="spinner-wrapper">
     <div class="spinner-border text-warning" role="status">
       <span class="visually-hidden">Loading...</span>
+    </div>
   </div>
-  </div>
-<!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background:hsl(139, 11%, 49%); border-radius:30px; margin:20px auto;">
-      <div class="container-fluid">
-        <!-- Brand -->
-        <div class="d-flex align-items-center">
-          <a class="navbar-brand pe-3" href="index.html">
-            <img src="assets/images/Logo.png" alt="ConnectIQ" width="80" height="80" class="rounded-circle">
-          </a>
-          <span class="fw-bold text-white">
-            ConnectIQ<br>
-            <span class="fw-light">Network Management</span>
-          </span>
-        </div>
 
-        <!-- Mobile toggle button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="width: 100%; background:hsl(139, 11%, 49%); border-radius:30px; margin:20px auto;">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand pe-3" href="index.html">
+          <img src="assets/images/Logo.png" alt="ConnectIQ" width="80" height="80" class="rounded-circle">
+        </a>
+        <span class="fw-bold text-white">
+          ConnectIQ<br>
+          <span class="fw-light">Network Management</span>
+        </span>
+      </div>
 
-        <!-- Navigation items -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav align-items-center gap-3 ms-0">
-            <!-- Search form -->
-            <li class="nav-item">
-              <form class="search-form d-flex">
-                <input type="text" placeholder="Type to search" class="search-input form-control me-2">
-                <div class="search-button">
-                  <i class="fa-solid fa-magnifying-glass search-icon"></i> 
-                  <i class="fa-solid fa-xmark search-close"></i>
-                </div>
-              </form>
-            </li>
+      <!-- Mobile toggle button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <li class="nav-item">
-              <a class="nav-link text-white" href="index.html">Home</a>
-            </li>
+      <!-- Navigation items -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center gap-3 ms-0">
+          <!-- Search form -->
+          <li class="nav-item">
+            <form class="search-form d-flex">
+              <input type="text" placeholder="Type to search" class="search-input form-control me-2">
+              <div class="search-button">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i> 
+                <i class="fa-solid fa-xmark search-close"></i>
+              </div>
+            </form>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link text-white" href="portfollio.html">Portfolio</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Home</a>
+          </li>
 
-            <li class="nav-item">
-              <a class="btn" href="contact.html" style="background:#d5e7d9; border-radius:15px; padding:5px 20px; color:#000;">
-                Contact
-              </a>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="portfollio.html">Portfolio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="btn" href="contact.html" style="background:#d5e7d9; border-radius:15px; padding:5px 20px; color:#000;">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="content-section">
+      <!-- Header Section -->
+      <div class="header-bg">
+        <h1 class="display-4 fw-bold">Cybersecurity</h1>
+        <h2 class="h3 mt-3">The Art of Ethical Hacking</h2>
+        <p class="lead mt-3">Protecting digital worlds through strategic security solutions</p>
+      </div>
+
+      <!-- Cybersecurity Stats -->
+      <div class="cyber-stats text-center">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="stat-number">95%</div>
+            <p>of cybersecurity breaches are caused by human error</p>
+          </div>
+          <div class="col-md-3">
+            <div class="stat-number">$4.35M</div>
+            <p>average cost of a data breach in 2024</p>
+          </div>
+          <div class="col-md-3">
+            <div class="stat-number">3.5M</div>
+            <p>unfilled cybersecurity jobs worldwide</p>
+          </div>
+          <div class="col-md-3">
+            <div class="stat-number">64%</div>
+            <p>companies experienced cyber attacks in 2024</p>
+          </div>
         </div>
       </div>
-    </nav>
 
+      <!-- Security Project Section -->
+      <div class="row mt-5">
+        <div class="col-lg-8 mx-auto">
+          <div class="feature-card">
+            <div class="card-body p-4">
+              <h2 class="card-title text-center mb-4"><i class="bi bi-shield-check me-2"></i>Cybersecurity Learning Path</h2>
+              <p class="lead text-center">Cybersecurity is the practice of protecting computers, networks, and data from unauthorized access, attacks, or damage. In today's digital world, cybersecurity is essential because almost everything we do depends on technology.</p>
+              
+              <div class="row mt-4">
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <i class="bi bi-lock-fill text-primary fs-2"></i>
+                    <h5>Protecting Data</h5>
+                    <p>Learn to keep sensitive information safe from hackers and unauthorized access.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <i class="bi bi-bug-fill text-success fs-2"></i>
+                    <h5>Understanding Threats</h5>
+                    <p>Master common threats like viruses, malware, phishing, and ransomware attacks.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <i class="bi bi-diagram-3 text-warning fs-2"></i>
+                    <h5>Network Security</h5>
+                    <p>Secure Wi-Fi networks and company systems to prevent unauthorized access.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <i class="bi bi-person-check text-info fs-2"></i>
+                    <h5>Ethical Hacking</h5>
+                    <p>Test systems for weaknesses to help organizations strengthen their security.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="container-fluid">
+      <!-- Hacker Types Section -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h2 class="text-center mb-4"><i class="bi bi-person-gear me-2"></i>Types of Hackers</h2>
+          <p class="text-center lead mb-4">Understanding the different motivations and methodologies in the cybersecurity landscape</p>
+          
+          <div class="hacker-types">
+            <div class="hacker-card">
+              <h4><i class="bi bi-shield-check text-success me-2"></i>White Hat Hackers</h4>
+              <p>The "good" hackers who use their knowledge to help companies find and fix security problems. They work as ethical hackers with proper authorization.</p>
+            </div>
+            <div class="hacker-card">
+              <h4><i class="bi bi-shield-exclamation text-danger me-2"></i>Black Hat Hackers</h4>
+              <p>Cybercriminals who exploit vulnerabilities for personal gain, data theft, extortion, or spreading malware with malicious intent.</p>
+            </div>
+            <div class="hacker-card">
+              <h4><i class="bi bi-code-slash text-warning me-2"></i>Script Kiddies</h4>
+              <p>Inexperienced hackers who use pre-made tools and scripts without understanding how they work, often causing random damage.</p>
+            </div>
+            <div class="hacker-card">
+              <h4><i class="bi bi-cpu text-primary me-2"></i>Security Researchers</h4>
+              <p>Experts who discover new vulnerabilities and develop exploits, often working with companies to improve security.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<h1 class="text-center p-5 header-bg">Cybersecurity</h1>
-<h2 class="text-center p-3">The art of ethical hacking!</h2>
+      <!-- Metasploit Framework Section -->
+      <div class="row mt-5">
+        <div class="col-lg-10 mx-auto">
+          <div class="feature-card">
+            <div class="card-body p-4">
+              <h2 class="text-center mb-4"><i class="bi bi-tools me-2"></i>Metasploit Framework</h2>
+              <p class="lead text-center">The most widely used penetration testing framework that helps security professionals identify and exploit vulnerabilities.</p>
+              
+              <div class="metasploit-features">
+                <div class="feature-item">
+                  <i class="bi bi-bug text-danger fs-3"></i>
+                  <h5>Exploits</h5>
+                  <p>Pre-written code to exploit known vulnerabilities in systems</p>
+                </div>
+                <div class="feature-item">
+                  <i class="bi bi-box-seam text-success fs-3"></i>
+                  <h5>Payloads</h5>
+                  <p>Execute actions on target systems after successful exploitation</p>
+                </div>
+                <div class="feature-item">
+                  <i class="bi bi-gear text-primary fs-3"></i>
+                  <h5>Auxiliary Modules</h5>
+                  <p>Network scanning, traffic sniffing, and password brute-forcing</p>
+                </div>
+                <div class="feature-item">
+                  <i class="bi bi-graph-up text-warning fs-3"></i>
+                  <h5>Post-Exploitation</h5>
+                  <p>Further exploration and privilege escalation after access</p>
+                </div>
+              </div>
+              
+              <div class="row mt-4">
+                <div class="col-md-6">
+                  <h5>Ethical Usage</h5>
+                  <ul>
+                    <li>Penetration testing with permission</li>
+                    <li>Security training and education</li>
+                    <li>Vulnerability research</li>
+                    <li>Security assessment</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h5>Applications</h5>
+                  <ul>
+                    <li>Corporate security testing</li>
+                    <li>Academic research</li>
+                    <li>Security certification preparation</li>
+                    <li>Incident response training</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        Security project
-      </button>
-    </h2>
-    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body"><strong>Cybersecurity:</strong> What You Can Learn
+      <!-- Mission Section -->
+      <div class="mission-section">
+        <h2 class="text-center mb-4"><i class="bi bi-bullseye me-2"></i>Our Mission: Find the Flaws, Fix the Future!</h2>
+        
+        <div class="step-card">
+          <h4><i class="bi bi-search text-primary me-2"></i>Step 1: The Digital Treasure Hunt</h4>
+          <p>We're a crew of curious minds who call ourselves <strong>TypeHackers</strong>. Our first mission is a giant treasure hunt for digital bugs! We scan, poke, and prod at software, looking for that one loose brick in the digital wall. A tiny mistake in the code? That's our treasure map!</p>
+        </div>
 
-Cybersecurity is the practice of protecting computers, networks, and data from unauthorized access, attacks, or damage. In today’s digital world, cybersecurity is essential because almost everything we do—shopping, banking, communicating, and even learning—depends on technology. <br> <br>
+        <div class="step-card">
+          <h4><i class="bi bi-tools text-success me-2"></i>Step 2: Unleashing Metasploit</h4>
+          <p>When we find a vulnerability, we deploy our favorite digital dragon: <strong>Metasploit</strong>! Think of it as our ultimate utility belt packed with pre-built keys for known locks. The real glory comes when we forge our own keys by writing custom exploits.</p>
+        </div>
 
-By studying cybersecurity, you can learn several important skills and concepts: <br> <br>
+        <div class="step-card">
+          <h4><i class="bi bi-graph-up-arrow text-warning me-2"></i>Step 3: Post-Exploitation Analysis</h4>
+          <p>Getting inside is just the beginning. We explore systems, analyze access levels, and understand how far a tiny flaw can propagate. This "post-exploitation party" helps us understand the real impact of vulnerabilities.</p>
+        </div>
 
-<strong>Protecting Data:</strong> You’ll learn how to keep sensitive information, like passwords and personal details, safe from hackers. <br> <br>
- 
-<strong>Understanding Threats:</strong> Cybersecurity teaches you about common threats such as viruses, malware, phishing attacks, and ransomware. You learn how these attacks work and how to prevent them. <br> <br>
+        <div class="text-center mt-4">
+          <h5 class="text-success"><i class="bi bi-shield-check me-2"></i>The Ethical Commitment</h5>
+          <p class="lead">We're the good guys. Every vulnerability we discover gets reported to help make the digital world safer for everyone. We're not in it for chaos—we're in it for the thrill of discovery and the satisfaction of protection.</p>
+        </div>
+      </div>
 
-<strong>Network Security:</strong> You gain knowledge about securing networks, including Wi-Fi networks and company systems, to prevent unauthorized access. <br> <br>
-
-<strong>Ethical Hacking:</strong> You can learn how ethical hackers test systems for weaknesses, which helps organizations strengthen their security. <br> <br>
-
-<strong>Problem-Solving and Critical Thinking:</strong> Cybersecurity challenges require you to think analytically to identify vulnerabilities and find solutions. <br> <br>
-
-<strong>Digital Responsibility:</strong> You’ll understand the importance of safe online behavior and how to protect yourself and others on the internet. <br> <br>
-
-Overall, learning cybersecurity gives you the skills to protect digital information, understand online risks, and even pursue a career in a growing and essential field. It’s not just about technology—it’s about being prepared for the digital world we live in.</div>
+      <!-- Call to Action -->
+      <div class="text-center mt-5">
+        <div class="feature-card">
+          <div class="card-body p-5">
+            <h3>Ready to Start Your Cybersecurity Journey?</h3>
+            <p class="lead">Join us in exploring the fascinating world of ethical hacking and network security</p>
+            <a href="contact.html" class="btn btn-lg mt-3" style="background:hsl(139, 11%, 49%); color:white; border:none; padding:12px 30px;">
+              <i class="bi bi-arrow-right me-2"></i>Get Started Today
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        Type Hackers
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Types Hackers
-
-In de wereld van cybersecurity bestaan verschillende soorten hackers, elk met hun eigen doelen, kennisniveau en motivaties. Niet elke hacker is een crimineel: sommige proberen systemen te beschermen, terwijl anderen ze misbruiken voor persoonlijk gewin. Hieronder een overzicht van de belangrijkste soorten hackers. <br> <br>
-
-<strong>White Hat vs. Black Hat</strong> <br> <br>
-
-
-White hat‑hackers zijn de “goede” hackers. Ze gebruiken hun kennis om bedrijven te helpen met het vinden en oplossen van veiligheidsproblemen. Ze werken meestal voor een organisatie of als ethische hacker. <br> <br>
-
-Black hat‑hackers zijn het tegenovergestelde: zij misbruiken kwetsbaarheden voor criminele doeleinden zoals datadiefstal, afpersing of het verspreiden van malware. Hun doel is schade aanrichten of financieel voordeel behalen.<br> <br>
-
-<strong>Ethische Hackers vs. Criminele Hackers</strong><br> <br>
-
-Ethische hackers handelen altijd met toestemming. Ze voeren tests uit, rapporteren fouten en zorgen ervoor dat systemen veiliger worden. Criminele hackers daarentegen werken in het geheim, veroorzaken schade en overtreden bewust de wet.<br> <br>
-
-<strong>“Echte” Hackers vs. Script Kiddies</strong><br> <br>
-
-Een “echte” hacker heeft diepgaande technische kennis. Ze begrijpen hoe systemen werken, analyseren beveiligingsfouten en schrijven hun eigen tools of exploits. Ze kunnen complexe beveiligingsmechanismen omzeilen en echte problemen oplossen of creëren.<br> <br>
-
-Script kiddies zijn het tegenovergestelde: ze recyclen tools en scripts die door anderen zijn gemaakt, zonder zelf te snappen hoe ze werken. Ze vertrouwen op kant‑en‑klare programma’s, automatiseren aanvallen en scannen het internet op zoek naar willekeurige slachtoffers. Ondanks hun beperkte kennis kunnen ze nog steeds veel schade aanrichten.<br> <br>
-
-<strong>Researchers en Exploit‑Developers</strong><br> <br>
-
-Dit zijn de meest ervaren hackers. Ze ontdekken nieuwe kwetsbaarheden in software en ontwikkelen exploits om deze fouten te testen of te misbruiken. Security researchers werken meestal samen met bedrijven om problemen te melden. Exploit‑developers hebben zeer geavanceerde technische vaardigheden en spelen een belangrijke rol in zowel cybersecurity als cybercriminaliteit.<br> <br>
-
-<strong>Gerichte vs. Willekeurige (Random) Aanvallen</strong><br> <br>
-
-Sommige hackers kiezen een specifiek doelwit, zoals een bedrijf, een overheid of een individu. Dit gebeurt vaak door ervaren hackers die precies weten wat ze willen bereiken.
-Script kiddies en sommige black hats gebruiken automatische tools die iedereen aanvallen die kwetsbaar is. Hierbij worden random slachtoffers getroffen — mensen of systemen die gewoon op het verkeerde moment onbeschermd waren.</div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        Metasploit
-      </button>
-    </h2>
-    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Metasploit Framework
-
-Metasploit is one of the most widely used tools in cybersecurity for testing and exploiting vulnerabilities in computer systems. It is a framework that helps security professionals, ethical hackers, and researchers identify weaknesses in software, networks, and applications. <br> <br>
-
-Key Features of Metasploit <br> <br>
-
-<strong>Exploits:</strong> Metasploit contains a large library of pre-written code that can exploit known vulnerabilities in systems. <br> <br>
-
-<strong>Payloads:</strong> Once a vulnerability is exploited, payloads allow the hacker (or ethical tester) to perform actions on the target system, like opening a remote shell or installing software. <br> <br>
-
-<strong>Auxiliary Modules:</strong> These tools perform tasks other than exploitation, such as scanning networks, sniffing traffic, or brute-forcing passwords. <br> <br>
-
-<strong>Post-Exploitation Modules:</strong> After gaining access, these modules allow further exploration, privilege escalation, or data gathering from the target system. <br> <br>
-
-<strong>Automation:</strong> Metasploit allows scripting and automation of complex attacks, making penetration testing faster and more efficient. <br> <br>
-
-How It’s Used <br> <br>
-
-<strong>Ethical Hacking:</strong> Security professionals use Metasploit to test the strength of systems and applications. By simulating real attacks, organizations can identify weaknesses before malicious hackers exploit them. <br> <br>
-
-<strong>Training & Research:</strong> Students and cybersecurity enthusiasts use it to learn about exploits, vulnerabilities, and attack methods in a safe lab environment. <br> <br>
-
-<strong>Penetration Testing:</strong> Companies hire ethical hackers to run Metasploit tests to evaluate their security posture. <br> <br>
-
-Important Notes <br> <br>
-
-Metasploit is a powerful tool. In the wrong hands, it can be used for illegal hacking. Always use it legally and ethically, in controlled environments or with permission. <br> <br>
-
-It helps demonstrate real-world cybersecurity threats, making it a vital tool for learning and research.</div>
-    </div>
-
-<h6 class="text-center pt-3">Our Mission: Find the Flaws, Fix the Future! <br> <br>
-
-We’re a crew of curious minds who call ourselves <strong>TypeHackers</strong>. We don’t just type code; we type the commands that uncover digital secrets. Our playground? A safely quarantined lab network where we can break stuff without causing real-world trouble. <br> <br>
-
-Step 1: The Digital Treasure Hunt <br> <br>
-
-Our first job is a giant treasure hunt, but instead of looking for gold, we’re searching for bugs, the digital kind! We scan, poke, and prod at software, looking for that one loose brick in the digital wall. A tiny mistake in the code? That’s our treasure map! The <strong>TypeHackers</strong> get seriously excited finding these hidden clues. <br> <br>
-
-Step 2: Unleashing the Robot Dragon (a.k.a. <strong>Metasploit</strong>) <br> <br>
-
-Okay, we found a secret door. Now, can we open it? This is where we get to play with our favorite digital dragon: <strong>Metasploit!</strong> <br> <br>
-
-Think of <strong>Metasploit</strong> as our ultimate utility belt, packed with all sorts of cool gadgets and pre-built keys. If a vulnerability is a known lock, Metasploit probably has the key. We learn to choose the right key (the exploit), attach a useful tool to it (the payload), and voilà—we’re in! We high-five as we see that beautiful command prompt open up on the target machine. It’s like magic, but with more typing. <br> <br>
-
-But the real TypeHackers glory? When we find a brand new lock that no one has a key for. Then, we roll up our sleeves and forge our own key by writing a custom exploit. That’s the moment we go from users to creators. <br> <br>
-
-Step 3: The "Now What?" Party <br> <br>
-
-Getting inside is cool, but what do we do then? We throw a "post-exploitation party"! Using <strong>Metasploit’s</strong> super-powered toolkit, we explore the system, see what we can access (ooh, shiny files!), and figure out how to become the admin. It’s all about seeing how far a tiny flaw can go, which is both terrifying and awesome. <br> <br>
-
-The Superhero Ending  <br> <br>
-
-Here’s the most important part: we’re the good guys. Every secret door we find, we immediately report it to the company that built the software so they can fix it. We’re not in it for the chaos; we’re in it for the thrill of the hunt and the satisfaction of making the internet a safer place for everyone.</h6>
-  </div>
-
-
-</div>
-</div>
-
-
   </main>
 
-
-
-
-
-<footer class="footer ">&copy ConnectIQ <span id="year"></span></footer>
-
+  <footer class="footer mt-5">&copy; ConnectIQ <span id="year"></span></footer>
 </body>
 </html>
