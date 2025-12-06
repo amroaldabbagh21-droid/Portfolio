@@ -17,7 +17,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
     </script>
   <!-- eigen geschreven css voor jouw html-bestand -->
-   <script defer src="js/script.js"></script>
+ 
   <link rel="stylesheet" href="css/style.css">
   <link
       rel="stylesheet"
@@ -26,20 +26,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script defer src="js/script.js"></script>
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
   <div class="spinner-wrapper">
     <div class="spinner-border text-warning" role="status">
-      <span class="visually-hidden">Loading...</span>
+      <span class="visually-hidden">Laden...</span>
     </div>
   </div>
 
   <main>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background:hsl(139, 11%, 49%); border-radius:30px; margin:20px auto;">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <!-- Brand -->
+        
         <div class="d-flex align-items-center">
           <a class="navbar-brand pe-3" href="index.html">
             <img src="assets/images/Logo.png" alt="ConnectIQ" width="80" height="80" class="rounded-circle">
@@ -50,36 +51,26 @@
           </span>
         </div>
 
-        <!-- Mobile toggle button -->
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Navigation items -->
+        
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav align-items-center gap-3 ms-0">
-            <!-- Search form -->
-            <li class="nav-item">
-              <form class="search-form d-flex">
-                <input type="text" placeholder="Type to search" class="search-input form-control me-2">
-                <div class="search-button">
-                  <i class="fa-solid fa-magnifying-glass search-icon"></i> 
-                  <i class="fa-solid fa-xmark search-close"></i>
-                </div>
-              </form>
-            </li>
 
             <li class="nav-item">
               <a class="nav-link text-white" href="index.html">Home</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-white" href="portfollio.html">Portfolio</a>
+              <a class="nav-link text-white" href="portfolio.html">Portfolio</a>
             </li>
 
             <li class="nav-item">
-              <a class="btn" href="contact.html" style="background:#d5e7d9; border-radius:15px; padding:5px 20px; color:#000;">
+              <a id="knop1" class="btn" href="contact.html">
                 Contact
               </a>
             </li>
@@ -88,44 +79,32 @@
       </div>
     </nav>
 
-    <!-- Image Gallery Section -->
-   <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Designer Section</title>
 
-    <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    
-</head>
 
-<body>
 
    <div class="designer-card shadow">
     <div class="row align-items-center justify-content-center">
         
-        <!-- LEFT TEXT -->
+        
         <div class="col-md-4 text-md-end text-center">
             <h1 class="mb-1 fw-bold text-center">ConnectIQ</h1>
             <h4 class="text-center p-3">Network management</h4>
         </div>
 
-        <!-- FLIP CARD CONTAINER -->
+        
         <div class="col-md-4 text-center my-4 my-md-0">
             <div class="flip-card">
                 <div class="flip-card-inner">
-                    <!-- FRONT SIDE (IMAGE) -->
+                    
                     <div class="flip-card-front">
                         <img src="assets/images/amroeidtt.png" class="designer-img" alt="designer">
                     </div>
-                    <!-- BACK SIDE (TEXT) -->
+                    
                     <div class="flip-card-back">
-                        <h3>About Me</h3>
+                        <h3>Over mij</h3>
                         <p>Network Administrator & Web Designer</p>
-                        <p>Passionate about cybersecurity and network infrastructure <br><strong>Skills:</strong></p>
+                        <p>Gepassioneerd door cybersecurity en netwerkinfrastructuur<br><strong>Skills:</strong></p>
                         <div class="skills">
                             <span class="skill-tag">Networking</span>
                             <span class="skill-tag">Security</span>
@@ -135,23 +114,83 @@
                 </div>
             </div>
         </div>
-            <!-- RIGHT TEXT -->
+            
             <div class="col-12 col-lg-4 text-lg-start text-center mt-4 mt-lg-0">
                 <h3 class="side-title py-3">Amro Aldabbagh</h3>
-                <p class="small-text">Welcome to my website, enjoy.</p>
+                <p class="small-text">Welkom op mijn website, veel leesplezier.</p>
             </div>
 
         </div>
 
-        <!-- HAND ICON -->
+        
        <div class="text-center mt-4">
-        <a class="hand-icon shadow" href="portfollio.html">
+        <a class="hand-icon shadow" href="portfolio.html">
             ✋
         </a>
         <div class="mb-1 fw-bold pt-2">
-            Click to see my projects
+            Klik om mijn projecten te zien
         </div>
     </div>
+
+</div>
+<div class="container-fluid">
+  <div class="row text-center fw-bold">
+    <h3>Korte verhaal hoe ik terecht in dit wereld gekomen ben</h3>
+    <div class="col-6 p-5">
+      <img src="assets/images/home1.jpg" alt="home1" width="200" height="200" class="rounded-circle hide-on-md">
+    </div>
+    <div class="col-lg-6 col-12 p-5">
+      <p class="index-text">In het donker van mijn tienerkamer, met alleen het scherm als licht, ontdekte ik iets dat mijn wereld op z’n kop zette. Het waren niet de games die me boeiden, of de sociale media. Het was de vraag: hoe komt dit alles hier eigenlijk? <br> <br>
+
+Ik klikte op een YouTube-filmpje over een hacker. Niet een crimineel, maar een “ethische” hacker. Een digitale slotenmaker die liet zien hoe makkelijk een onbeveiligd netwerk binnen te dringen was. En in plaats van angst, voelde ik iets anders: verwondering. Er bleek een complete, onzichtbare wereld onder het internet te bestaan. Een wereld van paden, verbindingen, poorten en muren.</p>
+    </div>
+    <div class="col-lg-6 col-12 p-5">
+<p class="index-text">Die avond ging ik niet slapen. Ik trok de stekker van onze thuismodem uit, draaide hem om, en tuurde naar de knipperende lampjes. Hier, dacht ik, hier gaat het allemaal doorheen. Mijn appjes naar vrienden, de foto’s uit mijn gsm, het schoolwerk. Het voelde alsof ik naar een rivier van informatie keek, maar de kaart van de bedding miste. <br> <br>
+
+Thuis werd ik de familiefiguur die altijd met “hé, even wat testen” de Wi-Fi liet uitvallen. Ik bouwde virtuele netwerken op mijn laptop, simpele wereldjes van routers en switches, en probeerde ze vervolgens te kraken. Het was als Legen, maar dan met firewalls en IP-adressen. Soms ging het fout. Soms lag heel mijn digitale bouwwerk in een klap plat. En juist dan leerde ik het meest.</p>
+  </div>
+  
+  <div class="col-6 p-5">
+    <img src="assets/images/home4.jpg" alt="twee" width="200" height="200" class="rounded-circle hide-on-md">
+  </div>
+  <hr class="my-4" />
+  <div class="overflow-hidden ">
+  <div class="row gx-5">
+    <div class="col">
+      <div class="p-3 bi bi-check-circle-fill text-success"> Wat ik beheers</div>
+      <div class="text-md-start index-text">
+        <ul>
+          <li>Kali Linux & Security Tools</li>
+          <li>Netwerkbeheer & Configuratie</li>
+          <li>Cisco Packet Tracer</li>
+          <li>Wireshark Netwerkanalyse</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3 bi bi-rocket-takeoff-fill text-success"> Mijn Leerdoelen</div>
+      <div class="text-md-start index-text">
+        <ul>
+        <li>CCNA Certificering behalen</li>
+        <li>Advanced Penetration Testing</li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+  </div>
+  
+</div>
+<div class="container">
+  <h1>En nog meer</h1>
+</div>
+<div class="row">
+  <div class="col text-center p-5">
+    <h5 class="p-3">Ik ben altijd op zoek naar nieuwe uitdagingen en leerervaringen. Of je nu een vraag hebt over netwerkbeveiliging of een project wilt bespreken:</h5>
+    <a href="contact.html" id="knop3" class="btn btn-primary">Neem contact op</a>
+  </div>
+  
 
 </div>
 
@@ -163,5 +202,4 @@
 
   <footer class="footer text-center py-3">&copy; ConnectIQ <span id="year"></span></footer>
 
-</body>
 </html>

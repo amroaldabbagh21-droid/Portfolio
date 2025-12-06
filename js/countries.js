@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
   ];
 
-  let output = '<option value="">Choose...</option>';
+  let output = '<option value="">Kies...</option>';
   countries.sort().forEach(country => {
     output += `<option value="${country}">${country}</option>`;
   });

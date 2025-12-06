@@ -17,7 +17,6 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
     </script>
   <!-- eigen geschreven css voor jouw html-bestand -->
-   <script defer src="js/script.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <link
       rel="stylesheet"
@@ -26,22 +25,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- als ik dit style hieronder in de css file verplaats wordt de image niet geupload naar de web pagina -->
-    <style>
-      
-.header-bg { 
-    background-image: url('assets/images/hht.jpg');
-    background-size: cover;
-    border-radius: 25px;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-    text-align: center;
-    padding: 150px 20px;
-}
+    <script defer src="js/script.js"></script>
 
-</style>
+      
+
 </head>
 <main>
 <body class="p-3 m-0 border-0 bd-example">
@@ -50,10 +37,10 @@
       <span class="visually-hidden">Loading...</span>
   </div>
   </div>
-<!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background:hsl(139, 11%, 49%); border-radius:30px; margin:20px auto;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <!-- Brand -->
+        
         <div class="d-flex align-items-center">
           <a class="navbar-brand pe-3" href="index.html">
             <img src="assets/images/Logo.png" alt="ConnectIQ" width="80" height="80" class="rounded-circle">
@@ -64,32 +51,22 @@
           </span>
         </div>
 
-        <!-- Mobile toggle button -->
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Navigation items -->
+    
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav align-items-center gap-3 ms-0">
-            <!-- Search form -->
-            <li class="nav-item">
-              <form class="search-form d-flex">
-                <input type="text" placeholder="Type to search" class="search-input form-control me-2">
-                <div class="search-button">
-                  <i class="fa-solid fa-magnifying-glass search-icon"></i> 
-                  <i class="fa-solid fa-xmark search-close"></i>
-                </div>
-              </form>
-            </li>
 
             <li class="nav-item">
               <a class="nav-link text-white" href="index.html">Home</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-white" href="portfollio.html">Portfolio</a>
+              <a class="nav-link text-white" href="portfolio.html">Portfolio</a>
             </li>
 
             <li class="nav-item">
@@ -108,30 +85,30 @@
             <h1 class="display-4">Webwiz - Gestructureerd Bekabeling</h1>
             <p class="lead">Netwerkopbouw volgens gestructureerde bekabelingsprincipes</p>
         </div>
-        <!-- Situatieschets -->
+        
         <section class="project-section">
-            <h2 class="mb-4">📋 Situatieschets</h2>
+            <h2 class="mb-4">Situatieschets</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <div class="card">
+                    <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Bedrijfsinformatie</h5>
+                            <h5 class="card-title"><strong>Bedrijfsinformatie</strong></h5>
                             <ul class="requirement-list">
-                                <li>✅ Kantoor met gelijkvloers en 1e verdieping</li>
-                                <li>✅ 4 meter hoogte tussen verdiepingen</li>
-                                <li>✅ 24 medewerkers met eigen werkplek</li>
-                                <li>✅ 2 on-prem servers (beveiligde toegang)</li>
-                                <li>✅ 20 desktops + 10 laptops (6 flexi-laptops)</li>
-                                <li>✅ VoIP telefoon op elke werkplek</li>
-                                <li>✅ 6 kantoren verdeeld over gebouw</li>
-                                <li>✅ MFP in elk kantoor</li>
-                                <li>✅ Alle devices single-homed</li>
+                                <li>Kantoor met gelijkvloers en 1e verdieping</li>
+                                <li>4 meter hoogte tussen verdiepingen</li>
+                                <li>24 medewerkers met eigen werkplek</li>
+                                <li>2 on-prem servers (beveiligde toegang)</li>
+                                <li>20 desktops + 10 laptops (6 flexi-laptops)</li>
+                                <li>VoIP telefoon op elke werkplek</li>
+                                <li>6 kantoren verdeeld over gebouw</li>
+                                <li>MFP in elk kantoor</li>
+                                
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card">
+                    <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title">Infrastructuur Vereisten</h5>
                             <div class="scenario-box">
@@ -152,9 +129,9 @@
             </div>
         </section>
 
-        <!-- Real-life Scenario's -->
+        
         <section class="project-section">
-            <h2 class="mb-4">🎯 Real-life Scenario's</h2>
+            <h2 class="mb-4 pt-5 ">Real-life Scenario's</h2>
             <div class="row">
                 <div class="col-md-6">
                     <div class="scenario-box">
@@ -187,9 +164,9 @@
             </div>
         </section>
 
-        <!-- Deliverables -->
+        
         <section class="project-section">
-            <h2 class="mb-4">📦 Deliverables</h2>
+            <h2 class="mb-4 pt-4">Deliverables</h2>
             <div class="row">
                 <div class="col-md-3 mb-3">
                     <div class="card deliverable-card h-100">
@@ -230,12 +207,12 @@
             </div>
         </section>
 
-        <!-- Technische Vereisten -->
+        
         <section class="project-section">
-            <h2 class="mb-4">⚙️ Technische Vereisten</h2>
+            <h2 class="mb-4 pt-3">Technische Vereisten</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title">Infrastructuur</h5>
                             <ul>
@@ -247,7 +224,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title">Bekabeling</h5>
                             <ul>
@@ -259,7 +236,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title">Planning</h5>
                             <ul>
@@ -273,9 +250,9 @@
             </div>
         </section>
 
-        <!-- Belangrijke Vragen -->
+      
         <section class="project-section">
-            <h2 class="mb-4">❓ Belangrijke Ontwerpvragen</h2>
+            <h2 class="mb-4 pt-5">Belangrijke Ontwerpvragen</h2>
             <div class="accordion" id="designQuestions">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
